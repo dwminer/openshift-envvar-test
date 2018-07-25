@@ -1,0 +1,17 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "envvar-test"
+spec:
+  runPolicy: "Parallel"
+  strategy:
+    type: "Docker"
+  source:
+    git:
+      ref: master
+      uri: ""
+    type: Git
+  output:
+    to:
+      kind: "ImageStream"
+      name: "envvar-test"
