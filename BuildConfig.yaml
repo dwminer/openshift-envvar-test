@@ -9,7 +9,7 @@ spec:
   source:
     git:
       ref: master
-      uri: ""
+      uri: "https://github.com/dwminer/openshift-envvar-test.git"
     type: Git
   output:
     to:
